@@ -40,6 +40,5 @@ public class TesteScanner {
         System.out.println(" RG:" + testeClient.rg);
 
        scan.close();
-       
     }
 }

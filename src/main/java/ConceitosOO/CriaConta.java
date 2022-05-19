@@ -10,7 +10,7 @@ public class CriaConta {
 
         // Criando um objeto do tipo Marcela que recebe os atributos da classe Cliente
         Cliente Marcela = new Cliente();
-        Marcela.nome = "Marcela de Assis Silveira";
+        Marcela.nome = "Marcela de Assis Silveira Costa";
         Marcela.cpf = "139.259.678.10";
         Marcela.idade = "31";
         Marcela.rg = "15.536.855";

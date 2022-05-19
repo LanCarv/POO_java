@@ -36,12 +36,11 @@ public class TesteScanner {
         System.out.println("Bacana só mais um dado para finalizarmos " + testeClient.nome + ", me fala seu rg pode ser?");
         testeClient.rg = scan.nextLine();
 
-       System.out.println("Seus dados foram armazenados com sucesso " + testeClient.nome);
+       System.out.println("Parabéns, seus dados foram armazenados com sucesso " + testeClient.nome);
         System.out.println(" Idade:" + testeClient.idade);
         System.out.println(" CPF:" + testeClient.cpf);
         System.out.println(" RG:" + testeClient.rg);
 
        scan.close();
-       
     }
 }

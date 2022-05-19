@@ -19,7 +19,7 @@ public class CriaConta {
 
         Conta contaDaMarcela = new Conta();
         contaDaMarcela.agencia = 14563;
-        contaDaMarcela.numero = 001;
+        contaDaMarcela.numero = 1;
         contaDaMarcela.saldo = 15000;
         System.out.println("Saldo inicial Marcela = " + contaDaMarcela.saldo);
 
@@ -37,7 +37,7 @@ public class CriaConta {
 
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.agencia = 75413;
-        contaDoPaulo.numero = 002;
+        contaDoPaulo.numero = 2;
         contaDoPaulo.saldo = 100;
         System.out.println("Saldo inicial Paulo = " + contaDoPaulo.saldo);
 
@@ -54,7 +54,7 @@ public class CriaConta {
         Robson.idade = "23";
         Robson.rg = "18.936.968";
         Robson.profissao = "Desenvolvedor";
-        Robson.salario = 6200.00;
+        Robson.salario = 7200.00;
 
         // Criando um objeto do tipo contaDoRobson que recebe o atributo deposita  da classe Conta onde setamos o valor
         Conta contaDoRobson = new Conta();

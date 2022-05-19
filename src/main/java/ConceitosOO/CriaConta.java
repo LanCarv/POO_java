@@ -53,7 +53,7 @@ public class CriaConta {
         Robson.cpf = "149.629.726.18";
         Robson.idade = "23";
         Robson.rg = "18.936.968";
-        Robson.profissao = "Desenvolvedor";
+        Robson.profissao = "Desenvolvedor Pleno";
         Robson.salario = 7200.00;
 
         // Criando um objeto do tipo contaDoRobson que recebe o atributo deposita  da classe Conta onde setamos o valor

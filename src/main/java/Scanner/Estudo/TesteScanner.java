@@ -1,3 +1,5 @@
+package Scanner.Estudo;
+
 import lombok.Data;
 
 import java.util.Scanner;
@@ -8,8 +10,8 @@ public class TesteScanner {
 
     public static void main(String[] args) {
 
-        TestClient testeClient = new TestClient();
-        Scanner scan = new Scanner(System.in); // criando objeto scanner
+        TestClient testeClient = new TestClient(); // Inicializando um objeto do tipo "testClient"
+        Scanner scan = new Scanner(System.in); // criando um objeto scanner
 
         System.out.println("Olá, informe seu nome por gentileza");
         testeClient.nome = scan.nextLine();

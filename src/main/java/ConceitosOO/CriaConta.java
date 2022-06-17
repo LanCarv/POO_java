@@ -1,7 +1,5 @@
 package ConceitosOO;
 
-import java.util.Scanner;
-
 public class CriaConta {
 
     public static void main(String[] args) {
@@ -9,37 +7,44 @@ public class CriaConta {
        // Scanner scan = new Scanner(System.in);
 
         // Criando um objeto do tipo Marcela que recebe os atributos da classe Cliente
+
         Cliente Marcela = new Cliente();
-        Marcela.nome = "Marcela de Assis Silveira Costa";
-        Marcela.cpf = "139.259.678.10";
-        Marcela.idade = "31";
-        Marcela.rg = "15.536.855";
-        Marcela.profissao = "Gerente de Banco";
-        Marcela.salario = 8000.00;
+        Marcela.setNome("Marcela de Assis Silveira Costa");
+        Marcela.setCpf("139.259.678.10");
+        Marcela.setIdade("31");
+        Marcela.setRg("15.536.855");
+        Marcela.setProfissao("Gerente de Banco");
+        Marcela.setSalario(8000.00);
+
+        // Criando um objeto contaDaMarcela que recebe os atributos da conta
 
         Conta contaDaMarcela = new Conta();
-        contaDaMarcela.agencia = 14563;
-        contaDaMarcela.numero = 1;
-        contaDaMarcela.saldo = 15000;
-        System.out.println("Saldo inicial Marcela = " + contaDaMarcela.saldo);
+        contaDaMarcela.setAgencia(14563);
+        contaDaMarcela.setNumero(1);
+        contaDaMarcela.deposita(15000);
+        System.out.println("Saldo inicial Marcela = " + contaDaMarcela.getSaldo());
 
         contaDaMarcela.titular = Marcela;
 
-        // criando novo objeto sendo uma segunda conta
+        // Criando um objeto do tipo Paulo que recebe os atributos da classe Cliente
 
         Cliente Paulo = new Cliente();
-        Paulo.nome = "Paulo Amorim Silveira";
-        Paulo.cpf = "889.995.777.21";
-        Paulo.idade = "30";
-        Paulo.rg = "19.956.900";
-        Paulo.profissao = "Uber";
-        Paulo.salario = 2000.00;
+        Paulo.setNome("Paulo Amorim Silveira");
+        Paulo.setCpf("889.995.777.21");
+        Paulo.setIdade("30");
+        Paulo.setRg("19.956.900");
+        Paulo.setProfissao("Uber");
+        Paulo.setSalario(2000.00);
+
+        // Criando um objeto contaDoPaulo que recebe os atributos da conta
 
         Conta contaDoPaulo = new Conta();
-        contaDoPaulo.agencia = 75413;
-        contaDoPaulo.numero = 2;
-        contaDoPaulo.saldo = 100;
-        System.out.println("Saldo inicial Paulo = " + contaDoPaulo.saldo);
+        contaDoPaulo.setAgencia(75413);
+        contaDoPaulo.setNumero(2);
+        contaDoPaulo.deposita(100);
+        System.out.println("Saldo inicial Paulo = " + contaDoPaulo.getSaldo());
+
+        // Acionando método transfere criado na Classe conta que modifica (seta) os atributos chamados neste objeto
 
         contaDaMarcela.transfere(500,contaDoPaulo);
         System.out.println("Saldo Atual Marcela = " + contaDaMarcela.getSaldo());
@@ -48,15 +53,16 @@ public class CriaConta {
         contaDoPaulo.titular = Paulo;
 
         // Criando um objeto do tipo Robson que recebe os atributos da classe Cliente
-        Cliente Robson = new Cliente();
-        Robson.nome = "Robson Miguel Silveira";
-        Robson.cpf = "149.629.726.18";
-        Robson.idade = "23";
-        Robson.rg = "18.936.968";
-        Robson.profissao = "Desenvolvedor Pleno";
-        Robson.salario = 7200.00;
 
-        // Criando um objeto do tipo contaDoRobson que recebe o atributo deposita  da classe Conta onde setamos o valor
+        Cliente Robson = new Cliente();
+        Robson.setNome("Robson Miguel Silveira");
+        Robson.setCpf("149.629.726.18");
+        Robson.setIdade("23");
+        Robson.setRg("18.936.968");
+        Robson.setProfissao("Desenvolvedor Pleno");
+        Robson.setSalario(7200.00);
+
+        // Criando um objeto do tipo contaDoRobson que recebe o atributo deposita  da classe Conta onde setamos o valor desejado
         Conta contaDoRobson = new Conta();
         contaDoRobson.deposita(500);
 

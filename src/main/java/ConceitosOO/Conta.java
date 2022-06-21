@@ -1,16 +1,24 @@
 package ConceitosOO;
 
-import lombok.Data;
 
 import java.util.Objects;
 
-@Data
 public class Conta {
 
-   private double saldo; // atributos da conta
+    private double saldo; // atributos da conta
     private int agencia;
     private int numero;
     Cliente titular; // composição de um objeto, ou seja uma classe com atributos próprios
+    private static int total;
+
+    // Construtor, passa os parametros essenciais para criar um objeto ou obrigação.
+    public Conta(int agencia, int numero){
+        Conta.total++;
+        this.agencia = agencia;
+        this.numero = numero;
+        System.out.println("Nova conta criada = " + this.numero);
+        System.out.println("O Total de contas é = " + total);
+    }
 
 
     // criação de métodos que são comportamentos que ConceitosOO.Conta pode executar

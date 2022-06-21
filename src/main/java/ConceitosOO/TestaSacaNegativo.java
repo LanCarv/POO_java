@@ -2,7 +2,7 @@ package ConceitosOO;
 
 public class TestaSacaNegativo {
     public static void main(String[] args) {
-        Conta conta = new Conta();
+        Conta conta = new Conta(1235,4561);
         conta.deposita(100);
         conta.saca(200);
         System.out.println(conta.saca(101));

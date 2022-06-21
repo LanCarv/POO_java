@@ -18,7 +18,7 @@ public class CriaConta {
 
         // Criando um objeto contaDaMarcela que recebe os atributos da conta
 
-        Conta contaDaMarcela = new Conta();
+        Conta contaDaMarcela = new Conta(1639,1234);
         contaDaMarcela.setAgencia(14563);
         contaDaMarcela.setNumero(1);
         contaDaMarcela.deposita(15000);
@@ -38,7 +38,7 @@ public class CriaConta {
 
         // Criando um objeto contaDoPaulo que recebe os atributos da conta
 
-        Conta contaDoPaulo = new Conta();
+        Conta contaDoPaulo = new Conta(1635,1423);
         contaDoPaulo.setAgencia(75413);
         contaDoPaulo.setNumero(2);
         contaDoPaulo.deposita(100);
@@ -63,7 +63,7 @@ public class CriaConta {
         Robson.setSalario(7200.00);
 
         // Criando um objeto do tipo contaDoRobson que recebe o atributo deposita  da classe Conta onde setamos o valor desejado
-        Conta contaDoRobson = new Conta();
+        Conta contaDoRobson = new Conta(1685,5467);
         contaDoRobson.deposita(500);
 
         // realiza a composição de objetos

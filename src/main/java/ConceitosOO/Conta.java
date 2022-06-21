@@ -6,6 +6,7 @@ import java.util.Objects;
 
 @Data
 public class Conta {
+
    private double saldo; // atributos da conta
     private int agencia;
     private int numero;
@@ -42,4 +43,45 @@ public class Conta {
          }
          System.out.println("Erro ao tranferir - saldo insuficiente");
      }
+
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) {
+         if(agencia <= 0){
+             System.out.println("não pode valor menor ou igual a 0");
+             return;
+         }
+        this.agencia = agencia;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        if(numero <= 0){
+            System.out.println("não pode valor menor ou igual a 0");
+            return;
+        }
+        this.numero = numero;
+    }
 }

@@ -3,7 +3,7 @@ package ConceitosOO;
 public class Cliente {
 
     private String nome;
-   private String idade;
+    private String idade;
     private String cpf;
     private String rg;
     private String profissao;
@@ -49,14 +49,10 @@ public class Cliente {
     public void setRg(String rg) {
         this.rg = rg;
     }
-
     public void setProfissao(String profissao) {
         this.profissao = profissao;
     }
-
     public void setSalario(Double salario) {
         this.salario = salario;
     }
-
-
 }
